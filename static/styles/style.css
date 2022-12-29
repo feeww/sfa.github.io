@@ -14,14 +14,7 @@ p{
     font-style: normal;
     
 }
-.spisok{
-   display: inline-block;
-   background-color: rgb(229, 247, 255);  
-   border-style: solid;  
-   border-width: 2px;
-   padding-right: 7px;
-   text-decoration: none;
-}
+
 .conteiner{
     display: inline-block;
     text-align: center;
@@ -199,3 +192,20 @@ text-decoration-thickness: 3px;
   font-weight: normal;
   font-size: x-large;
 }
+
+.spisok{
+  display: inline-block;
+  background-color: rgb(229, 247, 255);  
+  border-style: solid;  
+  border-width: 2px;
+  padding-right: 7px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.spisok:hover{
+  transition: 0.5s;
+  transform: translate(30px, 20px);
+  border-radius: 15px;
+}
+
