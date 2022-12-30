@@ -16,9 +16,10 @@ p{
 }
 
 .conteiner{
+    color: white;
     display: inline-block;
     text-align: center;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(31, 31, 31);
     align-items: center;
     margin: 5px;
     border: 2px;
@@ -35,6 +36,7 @@ p{
   border-style: solid;
   border-color: #111;
   border-width: 2px;
+  object-fit: cover;
 }
 /*
 .button {
@@ -97,6 +99,7 @@ p{
   border-color: black;
   color: white;
   text-decoration: none;
+  font: 700 32px 'Montserrat';
 }
 /*.nav-conteiner a:hover{
 text-decoration: underline rgb(255, 255, 255);
