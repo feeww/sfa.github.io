@@ -11,10 +11,14 @@
 }
 
 .welcomebox{   
+    position: relative;
+    margin: 0px;
+    margin-left: 720px;
+    margin-top: 200px;
+    align-items: center;
     margin: 500px;
     margin-left: 720px;
     margin-top: 200px;
-    position: relative;
     width: 500px;
     height: 500px;
     color: rgb(255, 255, 255);
@@ -23,10 +27,13 @@
     line-height: 500px;
     text-align: center;
     text-transform: uppercase;
+    min-width: 500px;
 }
+
 
 .welcomebox::before,
 .welcomebox::after{
+    align-items: center;
     content: '';
     z-index: -1;
     position: absolute;
@@ -35,8 +42,8 @@
     top: -15px;
     left: -15px;
     background: linear-gradient(45deg,
-      #ffff00, #00ff00, #0099ff, #001aff, #a200ff, #ff0055, #ff0000,
-      #ff0055, #ff0000, #ffff00, #00ff00, #0099ff, #001aff, #a200ff    
+     #ffffff, #000000, #ffffff, #000000, #ffffff, #000000, #ffffff,
+      #000000, #ffffff, #000000, #ffffff, #000000, #ffffff, #000000    
     );
     background-size: 300%;
     animation: border 12s linear infinite;
@@ -78,3 +85,44 @@
 .head{
     animation: transitionIn 0.75s; 
 }
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+

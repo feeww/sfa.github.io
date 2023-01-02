@@ -212,3 +212,68 @@ text-decoration-thickness: 3px;
   border-radius: 15px;
 }
 
+.headgap{
+  color: white;
+  align-items: center;
+  font-weight: bold;
+  align-content: center;
+  font-family: 'Montserrat';
+  margin-top: 0.5px;
+  padding: 2px;
+  margin: 2px;
+}
+
+.borders{
+  background-color: #111;
+  display: inline-block;
+  text-align: center;
+  margin-left: 650px;
+  padding-left: 50px;
+  padding: 100px;
+  align-items: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(196, 196, 196);
+}
+.borders>p>img{
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgb(255, 255, 255);
+  object-fit: cover;
+}
+.inform{
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+
+}
+
+.dot{
+  color: #151320;
+}
+.copyb{
+  border-color: #fdfdfd;
+  border-radius: 5px;
+  background-color: #111;
+  color: white;
+  width: 70px;
+  height: 25px;
+  font-style: 'Montserrat';
+  cursor: pointer;
+}
+.copyb:hover{
+  background-color: rgb(41, 41, 41);
+}
+
+.copy{
+color: white;
+}
+
+.html{
+  min-width: 700px;
+}
+
+.index{
+  min-width: 400px;
+}

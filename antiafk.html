@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/styles/style.css">   
+    <link rel="stylesheet" href="static/styles/navbar.css">
+    <link rel="stylesheet" href="static/styles/home.css">
+    <scrip src="copy.js">
+    <title>Document</title>
+    <div class="nav-conteiner">
+        <nav>
+            <ul>
+                <a href="index.html"><img class = 'logo'src = static/images/logo2.jpg></a>
+              <li class="nav-bar-li"><a class="home3" href="index.html">Home</a></li>
+              <li class="nav-bar-li"><a class="roblox3" href="roblox.html">Roblox</a></li>
+            </ul>
+        </nav>
+         <nav>
+            <ul>
+              <li class="nav-bar-li-o"><a class="others3" href="others.html">Other Files</a></li>
+            </ul>
+        </nav>
+      </div>
+</head>
+<body class="backg1">
+  <div class="borders">
+    <h1 class="headgap" align="center">AntiAfk</h1>
+    <p class="dot">.</p>
+    <p class="dot">.</p>
+    <p><img src="static/images/AntiAfk.png" alt=""></p>
+    <p class="inform">AntiAfk Script</p>
+    <p class="inform">(All games)</p>
+    <p class="dot">.</p>
+    <p class="dot">.</p>
+    <p class="inform">Script</p>
+    <div class="copy">
+    <input type="text" value='wait(0.5)local ba=Instance.new("ScreenGui")
+    local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
+    local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
+    ba.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;ca.Parent=ba;ca.Active=true
+    ca.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ca.Draggable=true
+    ca.Position=UDim2.new(0.698610067,0,0.098096624,0)ca.Size=UDim2.new(0,370,0,52)
+    ca.Font=Enum.Font.SourceSansSemibold;ca.Text="Anti AFK Script"ca.TextColor3=Color3.new(0,1,1)
+    ca.TextSize=22;da.Parent=ca
+    da.BackgroundColor3=Color3.new(0.196078,0.196078,0.196078)da.Position=UDim2.new(0,0,1.0192306,0)
+    da.Size=UDim2.new(0,370,0,107)_b.Parent=da
+    _b.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)_b.Position=UDim2.new(0,0,0.800455689,0)
+    _b.Size=UDim2.new(0,370,0,21)_b.Font=Enum.Font.Arial;_b.Text="made by you "
+    _b.TextColor3=Color3.new(0,1,1)_b.TextSize=20;ab.Parent=da
+    ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(0,0,0.158377,0)
+    ab.Size=UDim2.new(0,370,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="Status: Active"
+    ab.TextColor3=Color3.new(0,1,1)ab.TextSize=20;local bb=game:service"VirtualUser"
+    game:service"Players".LocalPlayer.Idled:connect(function()
+    bb:CaptureController()bb:ClickButton2(Vector2.new())
+    ab.Text="Roblox tried to kick u but i kicked him instead"wait(2)ab.Text="Status : Active"end)' id="myInput">
+    <button onclick="myFunction()" class="copyb">
+      Copy
+    </button>
+    <script>
+      function myFunction() {
+    var copyText = document.getElementById("myInput"); 
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);  
+    navigator.clipboard.writeText(copyText.value);
+    alert("Copied the text: " + copyText.value);
+  }
+    </script>
+  </div>
+  <p><a href="https://drive.google.com/file/d/1yJJiOtDF2RFHg4gkt3BEfYQ9NndwOq__/view?usp=share_link" target="_blank"><font size = 5><button class="button">Download</button></font></a></p>
+  </div>
+</body>
+</script>
+</html>
