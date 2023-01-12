@@ -224,25 +224,26 @@ text-decoration-thickness: 3px;
 }
 
 .borders{
-  background-color: #111;
-  display: inline-block;
+  block-size: 850px;
+  background-color: rgb(14, 12, 26);
   text-align: center;
-  margin-left: 650px;
-  padding-left: 50px;
-  padding: 100px;
+  align-content: center;
   align-items: center;
   border-style: solid;
   border-width: 2px;
   border-color: rgb(196, 196, 196);
 }
 .borders>p>img{
+  width: 450px;
+  height: 230px;
   border-width: 3px;
   border-style: solid;
   border-radius: 10px;
-  border-color: rgb(255, 255, 255);
+  border-color: rgb(201, 195, 195);
   object-fit: cover;
 }
 .inform{
+  font-size: larger;
   color: white;
   font-family: 'Montserrat';
   font-weight: bold;
@@ -257,8 +258,8 @@ text-decoration-thickness: 3px;
   border-radius: 5px;
   background-color: #111;
   color: white;
-  width: 70px;
-  height: 25px;
+  width: 90px;
+  height: 35px;
   font-style: 'Montserrat';
   cursor: pointer;
 }
@@ -276,4 +277,21 @@ color: white;
 
 .index{
   min-width: 400px;
+}
+
+.backg2{
+
+  min-width: 200px;
+}
+ 
+.input{
+  width: 350px;
+  height: 30px;
+  font-style: 'Montserrat';
+  cursor: copy;
+  color: white;
+  background-color: rgb(22, 22, 22);
+  border-width: 3px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 4px;
 }
