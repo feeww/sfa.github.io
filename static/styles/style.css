@@ -315,3 +315,18 @@ color: white;
 .youtube:hover{
   text-decoration: underline;
 }
+
+
+.informlink{
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  display: inline-block;
+  align-items: center;
+  font-size: larger;
+  color: rgb(248, 153, 75);
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-decoration: none;
+
+}
