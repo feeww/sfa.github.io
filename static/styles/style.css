@@ -330,3 +330,29 @@ color: white;
   text-decoration: none;
 
 }
+
+
+.NewsBoard{
+  color: rgb(236, 236, 236);
+  font-weight: bold;
+  font-size: x-large;
+  font-family: 'Montserrat';
+  padding: 20px;
+}
+
+.News{
+
+  text-decoration: none;
+  list-style: inside;
+  color: rgb(236, 236, 236);
+  font-weight: bold;
+  font-size: large;
+  font-family: 'Montserrat';
+  padding-left: 20px;
+}
+
+.BackGif{
+  background-image:url("https://giphy.com/embed/SXs8ksv1KzibiueuxS");
+  background-repeat: repeat;
+  background-size: 1080px;
+}

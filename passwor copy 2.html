@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form class="input-group">
+        <input type="text" id="input-field" placeholder="Username" required>
+        <input type="password" id="input-field2" placeholder="Password" required>
+        <button type="submit" class="submit-btn" onclick="op()">Login</button>
+
+    </form>
+
+
+<script>
+function op(){
+ var field2=document.getElementById("input-field2").value;
+if(field2 =="1")
+    document.location="http://127.0.0.1:5500/ggr/rainmeter.html";
+    
+
+ else{
+     alert("invaild information")
+}
+}  
+
+</script>
+</body>
+</html>
