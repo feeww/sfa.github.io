@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.backg1 {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #151320;
+}
+
+.welcomebox{   
+    position: relative;
+    margin: 0px;
+    margin-left: 720px;
+    margin-top: 200px;
+    align-items: center;
+    margin: 500px;
+    margin-left: 720px;
+    margin-top: 200px;
+    width: 500px;
+    height: 500px;
+    color: rgb(255, 255, 255);
+    background: #100f18;
+    font: 1000 64px 'Montserrat';
+    line-height: 500px;
+    text-align: center;
+    text-transform: uppercase;
+    min-width: 500px;
+}
+
+
+.welcomebox::before,
+.welcomebox::after{
+    align-items: center;
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: calc(100% + 30px);
+    height: calc(100% + 30px);
+    top: -15px;
+    left: -15px;
+    background: linear-gradient(45deg,
+     #ffffff, #000000, #ffffff, #000000, #ffffff, #000000, #ffffff,
+      #000000, #ffffff, #000000, #ffffff, #000000, #ffffff, #000000    
+    );
+    background-size: 300%;
+    animation: border 12s linear infinite;
+}
+
+.welcomebox::after{
+    filter: blur(50px);
+}
+
+@keyframes border{
+    0%, 100%{
+        background-position: 0 0;
+    }
+
+    50%{
+        background-position: 300%;
+    }
+}
+
+.all{
+    animation: transitionIn 0.75s;
+}
+
+@keyframes transitionIn{
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg)
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+
+.body{
+    animation: transitionIn 0.75s;
+}
+
+.head{
+    animation: transitionIn 0.75s; 
+}
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+

@@ -2,9 +2,7 @@ body{
   margin: 0;
   padding: 0;
 }
-span{
-    font-style: normal;
-}
+
 ol{
    list-style: circle;
 }
@@ -17,29 +15,34 @@ p{
     
 }
 
-.stuff{
-    text-align: 
-}
-
-.spisok{
-   display: inline-block;
-   background-color: rgb(229, 247, 255);  
-   border-style: solid;  
-   border-width: 2px;
-   padding-right: 7px;
-}
 .conteiner{
+    color: white;
     display: inline-block;
     text-align: center;
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(31, 31, 31);
     align-items: center;
     margin: 5px;
+    border: 2px;
+    border-style: solid;
+    border-radius: 13px;
 }
 
+.conteiner>img {
+  max-width: 265px;
+  min-height: 150px;
+  min-width: 265px;
+  max-height: 150px;
+  border-radius: 11px;
+  border-style: solid;
+  border-color: #111;
+  border-width: 2px;
+  object-fit: cover;
+}
+/*
 .button {
   align-items: center;
   appearance: button;
-  background-color: #2142ff;
+  background-color: #2e2e2e;
   border-radius: 7px;
   border-style: none;
   box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
@@ -53,7 +56,7 @@ p{
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
-  padding: 10px 21px;
+  padding: 10px 15px;
   text-align: center;
   text-transform: none;
   transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
@@ -63,21 +66,17 @@ p{
 }
 
 .button:active {
-  background-color: #006AE8;
+  background-color: #ffffff;
 }
 
 .button:hover {
-  background-color: #1C84FF;
+  background-color: #faeeee;
+  color: black;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
 }
-
-.img{
-  display: flex;
-}
-
-.conteiner>img {
-  max-width: 300px;
-  min-height: 100px;
-}
+*/
 
 .nav-conteiner{
   display: flex;
@@ -93,17 +92,67 @@ p{
   align-items: center;
 }
 .nav-conteiner>nav>ul>li>a {
-  display: block;
-  padding: 16px;
+  display: inline-block;
+  padding: 10px;
   border-style: solid;
-  border-width: 1px;
+  border-width: 3px;
   border-color: black;
   color: white;
   text-decoration: none;
+  font: 700 32px 'Montserrat';
 }
-.nav-conteiner a:hover{
-background-color: rgb(56, 56, 56);
+/*.nav-conteiner a:hover{
+text-decoration: underline rgb(255, 255, 255);
+text-decoration-style: solid;
+text-decoration-thickness: 3px;
+}*/
+
+.nav-bar-li{
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
 }
+.nav-bar-li::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #fdfdfd;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.nav-bar-li:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+.nav-bar-li-o{
+  display: inline-block;
+  justify-content: space-between;
+  position: relative;
+  text-decoration: none;
+}
+.nav-bar-li-o::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #fdfdfd;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.nav-bar-li-o:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .logo{
   max-width: 100px;
   display: block;
@@ -118,5 +167,192 @@ background-color: rgb(56, 56, 56);
   }
 }
 .backg{
-  background-color: rgb(217, 217, 255);
+  background-color: white;
+}
+.desc{
+  font-weight: bold;
+}
+
+.button {
+  padding: 0.6em 2.3em;
+  border: solid;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  border-radius: 10px;
+  user-select: none;
+  margin: 7px;
+  border-width: 2px;
+}
+
+.button:hover{
+  background-color: rgb(41, 41, 41);
+}
+
+.nav-conteiner>nav>ul>li>a{
+  font-weight: normal;
+  font-size: x-large;
+}
+
+.spisok{
+  display: inline-block;
+  background-color: rgb(229, 247, 255);  
+  border-style: solid;  
+  border-width: 2px;
+  padding-right: 7px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.spisok:hover{
+  transition: 0.5s;
+  transform: translate(30px, 20px);
+  border-radius: 15px;
+}
+
+.headgap{
+  color: white;
+  align-items: center;
+  font-weight: bold;
+  align-content: center;
+  font-family: 'Montserrat';
+  margin-top: 0.5px;
+  padding: 2px;
+  margin: 2px;
+}
+
+.borders{
+  block-size: 850px;
+  background-color: rgb(14, 12, 26);
+  text-align: center;
+  align-content: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: rgb(196, 196, 196);
+}
+.borders>p>img{
+  width: 450px;
+  height: 230px;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgb(173, 173, 173);
+  object-fit: cover;
+}
+.inform{
+  font-size: larger;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+
+}
+
+.dot{
+  color: #151320;
+}
+.copyb{
+  border-color: #fdfdfd;
+  border-radius: 5px;
+  background-color: #111;
+  color: white;
+  width: 90px;
+  height: 35px;
+  font-style: 'Montserrat';
+  cursor: pointer;
+}
+.copyb:hover{
+  background-color: rgb(41, 41, 41);
+}
+
+.copy{
+color: white;
+}
+
+.html{
+  min-width: 700px;
+}
+
+.index{
+  min-width: 400px;
+}
+
+.backg2{
+
+  min-width: 200px;
+}
+ 
+.input{
+  width: 350px;
+  height: 30px;
+  font-style: 'Montserrat';
+  cursor: copy;
+  color: white;
+  background-color: rgb(22, 22, 22);
+  border-width: 3px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 4px;
+}
+
+.discord{
+  color: rgb(73, 91, 248);
+  font-size: larger;
+  text-decoration: none;
+}
+.discord:hover{
+  text-decoration: underline;
+
+}
+
+.youtube{
+  color: crimson;
+  font-size: larger;
+  text-decoration: none;
+}
+
+.youtube:hover{
+  text-decoration: underline;
+}
+
+
+.informlink{
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+  display: inline-block;
+  align-items: center;
+  font-size: larger;
+  color: rgb(248, 153, 75);
+  font-family: 'Montserrat';
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+
+.NewsBoard{
+  color: rgb(236, 236, 236);
+  font-weight: bold;
+  font-size: x-large;
+  font-family: 'Montserrat';
+  padding: 20px;
+}
+
+.News{
+
+  text-decoration: none;
+  list-style: inside;
+  color: rgb(236, 236, 236);
+  font-weight: bold;
+  font-size: large;
+  font-family: 'Montserrat';
+  padding-left: 20px;
+}
+
+.BackGif{
+  background-image:url("https://giphy.com/embed/SXs8ksv1KzibiueuxS");
+  background-repeat: repeat;
+  background-size: 1080px;
 }

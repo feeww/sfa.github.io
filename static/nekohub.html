@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/styles/style.css">   
+    <link rel="stylesheet" href="static/styles/navbar.css">
+    <link rel="stylesheet" href="static/styles/home.css">
+    <scrip src="copy.js">
+    <title>Document</title>
+    <div class="nav-conteiner">
+        <nav>
+            <ul>
+                <a href="index.html"><img class = 'logo'src = static/images/logo2.jpg></a>
+              <li class="nav-bar-li"><a class="home31" href="index.html">Home</a></li>
+              <li class="nav-bar-li"><a class="roblox31" href="roblox.html">Roblox</a></li>
+            </ul>
+        </nav>
+         <nav>
+            <ul>
+              <li class="nav-bar-li-o"><a class="others31" href="others.html">Other Files</a></li>
+            </ul>
+        </nav>
+      </div>
+</head>
+<body class="backg1">
+  <div class="borders">
+    <p class="dot">.</p>
+    <h1 class="headgap" align="center">NekoHub</h1>
+    <p class="inform">(MadCity GUI)</p>
+    <p class="dot">.</p>
+    <p class="dot">.</p>
+    <p><img class="trap" src="static/images/NekoHub.jpg" alt=""></p>
+    <p class="dot">.</p>
+    <p class="dot">.</p>
+    <p class="inform">Script</p>
+    <p class="dot">.</p>
+    <div class="copy">
+    <input class="input" type="text" value='  loadstring(game:HttpGet("https://nekoscripts.xyz/neko/Scripts/MadCity.lua"))()' id="myInput" disabled>
+    <button onclick="myFunction()" class="copyb">
+      Copy
+    </button>
+    <script>
+      function myFunction() {
+    var copyText = document.getElementById("myInput"); 
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);  
+    navigator.clipboard.writeText(copyText.value);
+    alert("Copied!");
+  }
+    </script>
+  </div>
+  <p class="dot">.</p>
+  <p><a href="https://drive.google.com/file/d/1jXrfegXGgFfgCxqUq5_o_ITQrHMEZnd0/view?usp=share_link" target="_blank">
+    <font size=5><button class="button">Download</button></font>
+  </a></p>
+  <p class="dot">.</p>
+  <p><a class="discord" href="https://discord.gg/YPvpMbC2gD" target="_blank">Discord</a></p>
+</body>
+</script>
+</html>
